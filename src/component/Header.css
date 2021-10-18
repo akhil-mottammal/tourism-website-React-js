@@ -1,0 +1,43 @@
+.container{
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/009/878/583/large/midhun-francis-6.jpg?1521383305);
+    height: 100vh;
+    object-fit: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+.detail{
+    color: rgba(255, 255, 255, 0.452);
+    width: 40vw;
+    position: relative;
+    left: 561px;
+    top: 193px;
+    transition: ease-in-out 0.3s;
+    font-family:monospace;
+}
+.detail p{
+    line-height: 2;
+}
+
+ .detail button{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.452);
+    outline: none;
+    border: 1px solid white;
+    margin-top: 10px;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    left: 294px;
+}
+.detail button:hover{
+    background-color: rgb(211, 170, 35);
+    color: black;
+    width: 800 px;
+}
+.detail a{
+    text-decoration: none;
+    color: white;
+}
+.detail a:hover{
+    color: black;
+}
