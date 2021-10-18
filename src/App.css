@@ -8,3 +8,13 @@
   display: flex;
   justify-content: center;
 }
+.favourimg{
+  width: 278px;
+
+  border-radius: 10px;
+}
+.favour{
+  margin-top: 90px;
+  height: 400px;
+ 
+}
