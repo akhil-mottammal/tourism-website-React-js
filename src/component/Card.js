@@ -10,11 +10,15 @@ function Card(props) {
     const clickHandler=(img)=>{
         
         setBtn((previous)=>{
+        
+            console.log("props is",props)
             if(previous==="add to favourite"){
                 props.favourite(img)
                return "added to favourite"
 
             }else{
+                console.log("props.id is"+props.id)
+                props.remove(props.img)
                 return "add to favourite"
             }
         })
@@ -33,7 +37,7 @@ function Card(props) {
         <div className={`card ${clas}`}>
         <h3>{props.title}</h3>
         <span className="span"><i class="fas fa-heart"></i></span>
-        <img src={props.img} alt="paithalmala"/>
+        <img  src={props.img} alt="paithalmala"/>
         <p>{props.description}</p>
         <button className="btn" onClick={()=>{clickHandler(props.img)}}>{btn}</button>    
         </div>
