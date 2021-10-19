@@ -16,5 +16,21 @@
 .favour{
   margin-top: 20px;
   height: 400px;
+  position: relative;
+  
  
 }
+.fav{
+  position: relative;
+}
+
+.far{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: aliceblue;
+}
+.far:hover{
+  color: rgb(211, 40, 69);
+}
+

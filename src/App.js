@@ -21,6 +21,12 @@ function App() {
 
     }))
   }
+
+  function removeImage(img){
+  setImage(image.filter((item)=>{
+    return item !==img
+  }))
+  }
   
   
   return (
@@ -43,8 +49,10 @@ function App() {
        <h3 >Favourite Places</h3>
 {
   image.map((image)=>{
-    return(
-      <img id={Math.random()} className="favourimg" src={image} alt="fav"></img>
+    return(<div className="fav">
+      <i class="far fa-times-circle " onClick={()=>removeImage(image)}/>
+      <img id={Math.random()} className="favourimg" src={image} alt="fav" ></img>
+      </div>
     )
   })
 }
